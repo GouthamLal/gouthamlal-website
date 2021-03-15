@@ -1,10 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Changa&display=swap');
 :root {
-    --pink: #BF0B3B;
-    --maroon: #590524;
-    --white: #F2EDD5;
-    --yellow: #F2B807;
-    --peach: #D98F4E;
+    --dark-purple: #170126;
+    --light-purple: #4F3F59;
+    --grey: #867D8C;
+    --white: #F2F2F2;
+    --black: #0D0D0D;
+    --heading-font: 'Changa', sans-serif;
+    --body-font: 'Alegreya', serif;
 }
 * {
     box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--white);
+    color: var(--black);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--dark-grey);
+}
+a {
+    color: var(--light-purple);
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px dashed var(--grey);
+}
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+/* Main */
+main {
+    font-size: larger;
+    padding: 0 5%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 5%;
+    border-top: 1px dashed var(--grey);
+}
+
+.social-list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.social-list img {
+    width: 24px;
 }
