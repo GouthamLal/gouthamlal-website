@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Changa&display=swap');
 :root {
-    --dark-purple: #170126;
-    --light-purple: #4F3F59;
-    --grey: #867D8C;
-    --white: #F2F2F2;
-    --black: #0D0D0D;
+    --dark-orange: #F28705;
+    --light-orange: #F29F05;
+    --red: #D9042B;
+    --violet: #270140;
+    --golden: #F2B705;
     --heading-font: 'Changa', sans-serif;
     --body-font: 'Alegreya', serif;
 }
@@ -17,15 +17,14 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--body-font);
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--violet);
+    color: var(--golden);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--dark-grey);
 }
 a {
-    color: var(--light-purple);
+    color: var(--light-orange);
 }
 /* Header */
 header {
@@ -33,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    border-bottom: 1px dashed var(--grey);
+    border-bottom: 1px dashed var(--red);
 }
 header a {
     text-decoration: none;
@@ -59,7 +58,7 @@ footer {
     justify-content: space-between;
     align-items: baseline;
     padding: 0 5%;
-    border-top: 1px dashed var(--grey);
+    border-top: 1px dashed var(--red);
 }
 
 .social-list li {
