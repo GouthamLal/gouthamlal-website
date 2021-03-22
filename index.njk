@@ -8,9 +8,10 @@ eleventyNavigation:
 <article class="intro">
   <h2>Hey Friends</h2>
  <p>I'm Goutham. I'm a writer and a programmer.  </p> 
-<p>I enjoy exploring ideas and techniques that help us improve our lives and sourroundings.</p>  
+<p>I enjoy exploring ideas and techniques that help us improve our lives and our surroundings.</p>  
 </article>
 
+<section class="latest-articles">
 {% set maxPosts = collections.posts.length | min(5) %}
 <h1>Latest {% if maxPosts == 1 %}Article{% else %}{{ maxPosts }} Articles{% endif %}</h1>
 
@@ -19,3 +20,4 @@ eleventyNavigation:
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+</section>
