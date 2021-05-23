@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
 :root {
-    --dark-orange: #F28705;
-    --light-orange: #F29F05;
-    --red: #D9042B;
-    --violet: #270140;
-    --golden: #F2B705;
-    --heading-font: 'Changa', sans-serif;
-    --body-font: 'Alegreya', serif;
+    --heading-color: #F2F2F2;
+    --body-text-color: #D9D9D9;
+    --card-bg: #0D0D0D;
+    --bg: #404040;
+    --label-bg: #8C8C8C;
+    --heading-font: 'Karla', sans-serif;
+    --body-font: 'Karla', serif;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -17,96 +18,28 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--body-font);
-    background-color: var(--violet);
-    color: var(--golden);
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
+    background-color: var(--bg);
+    color: var(--body-text-color);
 }
 a {
-    color: var(--light-orange);
-}
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    border-bottom: 1px dashed var(--red);
-}
-header a {
+    color: var(--heading-color);
     text-decoration: none;
 }
 
-.logo a {
+main h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
     text-transform: uppercase;
-    color: var(--red);
-
 }
 
-.nav li {
-    display: inline-block;
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem 3rem;
 }
 
-/* Main */
-main {
-    font-size: larger;
-    width: 90%;
-    margin: auto;
-    
-}
-.intro {
-    margin: 1rem 0;
-    padding: 0 1rem;
-    border: 1px dashed var(--red);
-    border-radius: 10px;
-}
-.latest-articles {
-    margin: 1rem 0;
-    padding: 0 1rem;
-    border: 1px dashed var(--red);
-    border-radius: 10px;
-}
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 90%;
-    margin: auto;
-    border-top: 1px dashed var(--red);
+.label {
+    color: var(--heading-color);
 }
 
-.social-list li {
-    display: inline-block;
-    padding: 5px;
-}
-
-.social-list img {
-    width: 24px;
-}
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-    main {
-        width: 700px;
-        margin: auto;
-    }
-}
-
-@media (min-width: 1024px) {
-    main {
-        width: 900px;
-        margin: auto;
-    }
-    header {
-        width: 1000px;
-        margin: auto;
-    }
-    footer {
-        width: 1000px;
-        margin: auto;
-    }
+.email {
+    font-size: x-large;
 }

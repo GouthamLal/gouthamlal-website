@@ -5,18 +5,16 @@
 
   </head>
   <body>
-    <header>
-      {% include "header.njk" %}
-    </header>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {% include "header.njk" %}
+
+    <main class="content {% if templateClass %} {{ templateClass }} {% endif %}">
 
       {{ content | safe }}
     </main>
 
-    <footer>
       {% include "footer.njk" %}
-    </footer>
+
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
