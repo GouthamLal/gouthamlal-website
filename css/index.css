@@ -59,18 +59,18 @@ main h1, h2, h3, h4, h5, h6 {
 header {
     padding: 2rem;
     font-size: small;
-    background-color: var(--color-two);
+    background-color: var(--color-one);
 
 }
 
 footer {
     padding: 0.5rem 2rem;
-    background-color: var(--color-three);
+    background-color: var(--color-one);
 }
 
 #intro {
     padding-top: 2rem;
-    background-color: var(--color-six);
+    background-color: var(--color-two);
 
 }
 
