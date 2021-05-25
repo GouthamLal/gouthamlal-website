@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
 :root {
-    -color-one: #142740;
-    -color-two: #D9B07E;
-    -color-three: #F2CDA0;
-    -color-four: #F23E16;
-    -color-five: #D93223;
+    --color-one: #166B8C;
+    --color-two: #16778C;
+    --color-three: #038C8C;
+    --color-four: #CDD9C7;
+    --color-five: #592202;
+    --color-six: #111210;
 
-    --bg: #D93223;
-    --heading-color: #F2CDA0;
-    --body-text-color: #D9B07E;
-    --card-bg: #142740;
-    --label-bg: #F23E16;
+    --heading-color: #CDD9C7;
+    --body-text-color:#CDD9C7;
     --heading-font: 'Karla', sans-serif;
     --body-font: 'Karla', serif;
 }
@@ -24,7 +22,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--body-font);
-    background-color: black;
+    background-color: var(--color-two);
     color: var(--body-text-color);
     font-size: larger;
 }
@@ -45,18 +43,12 @@ main h1, h2, h3, h4, h5, h6 {
 
 /* Card */
 .card {
-    background-color: var(--card-bg);
     text-align: left;
     padding: 0.5rem 2rem;
 }
 
 .label {
     color: var(--heading-color);
-    transition: color 2s
-}
-
-.label:hover {
-    color: var(--bg)
 }
 
 .email {
@@ -67,16 +59,25 @@ main h1, h2, h3, h4, h5, h6 {
 header {
     padding: 2rem;
     font-size: small;
+    background-color: var(--color-two);
+
 }
 
 footer {
     padding: 0.5rem 2rem;
+    background-color: var(--color-three);
 }
 
 #intro {
     padding-top: 2rem;
+    background-color: var(--color-six);
+
 }
 
 #intro h2 {
     margin: 0;
+}
+
+#services {
+    background-color: var(--color-one);
 }
