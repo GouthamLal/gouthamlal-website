@@ -1,10 +1,14 @@
-     <header id="header" class="card">
-     <h1 class="name logo home"><a href="{{ '/' | url }}"><span class="first-name">Goutham</span> <span class="second-name">Lal</span></a></h1>
+<header id="header" class="card">
 
+    <div class="logo">
+        <h1 class="name home"><a href="{{ '/' | url }}"><span class="first-name">Goutham</span> <span class="second-name">Lal</span></a></h1>
+      </div>
+    <div class="navigation">
       <!-- {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul> -->
-       </header>
+    </div>
+</header>
