@@ -9,6 +9,7 @@
     --grad-two: linear-gradient(45deg, var(--color-two), var(--color-one));
 
     --font-one: 'Rubik', sans-serif;
+    --font-two: 'Fjalla One', sans-serif;
 }
 
 * {
@@ -20,13 +21,13 @@
 
 body {
     font-family: var(--font-one);
+    font-size: 5vmin;
     color: var(--color-four);
     background-color: var(--color-five);
-    margin: 5%;
 }
 
 a {
-    color: var(--color-four);
+    color: var(--color-one);
     text-decoration: underline;
 }
 
@@ -36,42 +37,44 @@ ol, ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
+    font-family: var(--font-one);
+    margin: 4vh 0;
 }
 
 /* Card */
 .card {
+    padding: 5vh 0;
     border-radius: 3rem;
-    margin: 0.5rem;
-    padding: 1rem;
 }
 .keyword {
     color: var(--color-one);
 }
 
 .main-container {
+    margin: auto;
+    width: 90vw;
     background-image: var(--grad-one);
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-columns: repeat(8, 1fr);
     border-radius: 1px;
 }
 
 /* Header */
 header {
-    grid-row: 1;
-    grid-column: 1 / 2;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    height: 35vh;
 }
 
 .logo {
     text-transform: uppercase;
 }
+.logo h1 {
+    line-height: 3vmin;
+    font-family: var(--font-two);
+}
 .logo a {
     font-family: var(--body-font);
-    font-size: 5vw;
-    color: var(--color-three);
+    font-size: 5vmin;
+    color: var(--color-two);
     text-decoration: none;
 }
 
@@ -105,56 +108,18 @@ header {
     }
 }
 
-main {
-    grid-row: 2;
-    grid-column: 1 / 9;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-}
 
 .intro {
-    grid-row: 1;
-    grid-column: 1 / 9;
-    font-size: larger;
+    font-size: 9vmin;
+    font-weight: bold;
 }
 
-.intro p {
-    font-size: 7vw;
-    font-family: var(--font-three);
+.intro .p2 {
+    padding-bottom: 4vmin;
 }
 
-
-.services {
-    grid-row: 2;
-    grid-column: 1 / 9;
-}
-
-footer {
-    grid-row: 3;
-    grid-column: 1 / 9;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-footer h2 {
-    grid-row: 1;
-    grid-column: 1 / 9;
-}
-
-footer h3 {
-    grid-row: 2;
-    grid-column: 1 / 4;
-}
-
-.email {
-    grid-row: 3;
-    grid-column: 1 / 6;
-}
-
-.social-list {
-    grid-row: 3;
-    grid-column: 6 / 9;
+.services h2 {
+    padding-bottom: 3vmin;
 }
 
 
