@@ -1,48 +1,33 @@
 :root {
-    --color-one: #0442BF;
-    --color-two: #0455BF;
-    --color-three: #034AA6;
-    --color-four: #5483BF;
-    --color-five: #D2D5D9;
+    --color-one: #05F29B;
+    --color-two: #04BF7B;
+    --color-three: #038C5A;
+    --color-four: #F2F2F2;
+    --color-five: #0D0D0D;
 
-    --border-c1: #F24150;
-    --border-c2: #30348C;
-    --border-c3: #03A64A;
-    --border-c4: #F2E30F;
-    --border-c5: #F2CBBD;
+    --grad-one: linear-gradient(-45deg, var(--color-one), var(--color-one-a));
+    --grad-two: linear-gradient(45deg, var(--color-two), var(--color-one));
 
-
-    --heading-font: 'JetBrains Mono', monospace;;
-    --body-font: 'Montserrat', sans-serif;
+    --font-one: 'Rubik', sans-serif;
 }
 
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+
 
 body {
-    font-family: var(--body-font);
-    color: var(--color-five);
-    background-color: var(--color-four);
-}
-
-.main-container {
-    margin: 1rem;
-    background-color: var(--color-three);
-    border-radius: 0.5rem;
-    border-right: 1rem solid var(--color-five);
-    box-shadow: 0 0 2px var(--color-three);
+    font-family: var(--font-one);
+    color: var(--color-four);
+    background-color: var(--color-five);
+    margin: 5%;
 }
 
 a {
-    color: var(--heading-color);
-    text-decoration: none;
+    color: var(--color-four);
+    text-decoration: underline;
 }
 
 ol, ul {
@@ -54,83 +39,122 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+/* Card */
+.card {
+    border-radius: 3rem;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.keyword {
+    color: var(--color-one);
+}
 
-.label {
-    color: var(--heading-color);
+.main-container {
+    background-image: var(--grad-one);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    border-radius: 1px;
 }
 
 /* Header */
 header {
-    display: flex;
-    background-color: var(--color-five);
-    color: var(--color-three);
-
+    grid-row: 1;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .logo {
-    width: 50%;
+    text-transform: uppercase;
 }
-.logo h1 {
-    margin: 0;
-    text-transform: lowercase;
-}
-.navigation {
-    width: 50%;
+.logo a {
+    font-family: var(--body-font);
+    font-size: 5vw;
+    color: var(--color-three);
+    text-decoration: none;
 }
 
 .first-name {
     display: inline-block;
-    animation: gtm-animation 4s ease-in-out;
+    animation: gtm-animation 3s ease-in-out;
 }
 
 @keyframes gtm-animation {
     0% {
-        transform: translate(10rem) rotate(90deg);
+        transform: translate(10rem);
     }
 
     100% {
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(0);
     }
 }
 
 .second-name {
     display: inline-block;
-    transform-origin: bottom left;
-    animation: lal-horizontal 3s ease-in-out;
+    animation: lal-horizontal 2s ease-in-out;
 }
 
 @keyframes lal-horizontal {
     0% {
-        transform: rotate(90deg);
+        transform: translate(-10rem);
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: translate(0);
     }
 }
 
+main {
+    grid-row: 2;
+    grid-column: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
 
 .intro {
-    padding: 2rem
+    grid-row: 1;
+    grid-column: 1 / 9;
+    font-size: larger;
+}
 
+.intro p {
+    font-size: 7vw;
+    font-family: var(--font-three);
 }
 
 
 .services {
-    padding: 2rem;
+    grid-row: 2;
+    grid-column: 1 / 9;
 }
 
-/* Footer */
-footer {;
-    padding: 2rem;
+footer {
+    grid-row: 3;
+    grid-column: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
-/* Card */
-/* .card {
-    transition: background-color 3s;
+footer h2 {
+    grid-row: 1;
+    grid-column: 1 / 9;
 }
 
-.card:hover {
-    background-color: var(--color-one)
-} */
+footer h3 {
+    grid-row: 2;
+    grid-column: 1 / 4;
+}
+
+.email {
+    grid-row: 3;
+    grid-column: 1 / 6;
+}
+
+.social-list {
+    grid-row: 3;
+    grid-column: 6 / 9;
+}
+
 
