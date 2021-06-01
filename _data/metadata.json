@@ -1,9 +1,9 @@
 {
   "title": "Goutham Lal",
   "url": "https://gouthamlal.com/",
-  "description": "I am writing about my experiences.",
+  "description": "Hi. I'm Goutham Lal. I'm a front-end web developer from India. I work with modern web technologies to build powerful online presence for startups, businesses and companies.",
   "feed": {
-    "subtitle": "I am writing about my experiences.",
+    "subtitle": "Hi. I'm Goutham Lal. I'm a front-end web developer from India. I work with modern web technologies to build powerful online presence for startups, businesses and companies.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://gouthamlal.com/"
